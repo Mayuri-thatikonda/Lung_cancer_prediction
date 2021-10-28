@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color:Aquamarine;">
+
+<body>
+
+    <div style="color:black">
+        <form action="{{ url_for('predict')}}" method="post">
+            <h2>LUNG CANCER PREDICTION</h2>
+            <h3>AGE</h3>
+            <input id="first" name="AGE" type="number ">
+            
+            <h3>SMOKING (1-Yes,0-No)</h3><br><input id="second" name="SMOKING"  required="required">
+                
+            <h3>YELLOW_FINGERS(1-Yes,0-No)</h3><br><input id="third" name="YELLOW_FINGERS" type="number">
+            <h3>ANXIETY(1-Yes,0-No)</h3><input id="fourth" name="ANXIETY" required="required">
+            <h3>PEER_PRESSURE(1-Yes,0-No)</h3><br><input id="fifth" name="PEER_PRESSURE" required="required">
+            <h3>CHRONIC_DISEASE(1-Yes,0-No)</h3><br><input id="fifth" name="CHRONIC_DISEASE" required="required">
+            <h3>FATIGUE(1-Yes,0-No)</h3><br><input id="fifth" name="FATIGUE" required="required">
+            <h3>ALLERGY(1-Yes,0-No)</h3><br><input id="fifth" name="ALLERGY" required="required">
+            <h3>WHEEZING(1-Yes,0-No)</h3><br><input id="fifth" name="WHEEZING" required="required">
+            <h3>ALCOHOL_CONSUMING(1-Yes,0-No)</h3><br><input id="fifth" name="ALCOHOL_CONSUMING" required="required">
+            <h3>COUGHING(1-Yes,0-No)</h3><br><input id="fifth" name="COUGHING" required="required">
+            <h3>SHORTNESS_OF_BREATH(1-Yes,0-No)</h3><br><input id="fifth" name="SHORTNESS_OF_BREATH" required="required">
+            <h3>SWALLOWING_DIFFICULTY(1-Yes,0-No)</h3><br><input id="fifth" name="SWALLOWING_DIFFICULTY" required="required">
+            <h3>CHEST_PAIN(1-Yes,0-No)</h3><br><input id="fifth" name="CHEST_PAIN" required="required">
+
+            <h3>GENDER(Male-M,Female-F)</h3><br><input id="second" name="GENDER" required="required">
+                
+            
+            </select>
+            <br><br><button id="sub" type="submit ">Prediction</button>
+            <br>
+
+
+
+
+        </form>
+        <br><br><h3>{{my_prediction_texts }}<h3>
+    </div>
